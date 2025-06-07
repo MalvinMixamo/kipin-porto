@@ -12,7 +12,7 @@ export default function Home() {
       <div id="home" className={styles.home}>
       <div className={styles.textContainer}>
         <p className={styles.hi}>Hi</p>
-        <h1 className={styles.title}>I'm <span className={styles.name}>Malvin</span> Pradhypta</h1>
+        <h1 className={styles.title}><p>I&#39;m</p> <span className={styles.name}>Malvin</span> Pradhypta</h1>
           <RotatingText
             texts={["Next Engineer","Frontend Dev", "UI/UX Designer", "Tech Enthusiast"]}
             mainClassName={styles.rotateText}
