@@ -3,16 +3,27 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import RotatingText from "@/RotatingText/RotatingText";
 import Nav from "./components/nav";
-
+import Particles from "@/RotatingText/Particles";
 export default function Home() {
   return (
     <div>
+      <Particles
+        particleColors={['#00C8FF', '#FF00C8', '#C800FF', '#C8FF00', '#00C8C8']}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={300}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+        className={styles.particles}
+      />
       <Nav />
       <div className={styles.container}>
       <div id="home" className={styles.home}>
       <div className={styles.textContainer}>
         <p className={styles.hi}>Hi</p>
-        <h1 className={styles.title}><p>I&#39;m</p> <span className={styles.name}>Malvin</span> Pradhypta</h1>
+        <h1 className={styles.title}>I&#39;m <span className={styles.name}>Malvin</span> Pradhypta</h1>
           <RotatingText
             texts={["Next Engineer","Frontend Dev", "UI/UX Designer", "Tech Enthusiast"]}
             mainClassName={styles.rotateText}
