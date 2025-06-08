@@ -106,6 +106,18 @@
   color: white;
   gap: 10px;
 }
+.glare{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: #656565;
+  color: white;
+  gap: 10px;
+}
 .rotateText {
   width: 250px;
   height: 48px;

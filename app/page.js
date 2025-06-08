@@ -4,6 +4,8 @@ import styles from "./page.module.css";
 import RotatingText from "@/RotatingText/RotatingText";
 import Nav from "./components/nav";
 import Particles from "@/RotatingText/Particles";
+import GlareHover from "@/RotatingText/GlareHover";
+
 export default function Home() {
   return (
     <div>
@@ -56,80 +58,241 @@ export default function Home() {
         <p className={styles.category}>Programming Languages</p>
         <div className={styles.skillsList}>
           <div className={styles.skillItem}>
-            <Image src="/skills/html.png" width={33} height={38} alt="HTML" />
-            <p>HTML</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/html.png" width={33} height={38} alt="HTML" />
+              <p>HTML</p>
+            </GlareHover>
+            
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/css.png" width={33} height={38} alt="CSS" />
-            <p>CSS</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/css.png" width={33} height={38} alt="CSS" />
+              <p>CSS</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/js.png" width={38} height={38} alt="JavaScript" />
-            <p>JavaScript</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/js.png" width={38} height={38} alt="JavaScript" />
+              <p>JavaScript</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/CS.png" width={60} height={60} alt="CSharp" />
-            <p>CSharp</p>
+          <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/CS.png" width={60} height={60} alt="CSharp" />
+              <p>CSharp</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/Golang.png" width={76} height={38} alt="Golang" />
-            <p>Golang</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Golang.png" width={76} height={38} alt="Golang" />
+              <p>Golang</p>
+            </GlareHover>
           </div>
         </div>
         <p className={styles.category}>Technology</p>
         <div className={styles.skillsList}>
           <div className={styles.skillItem}>
-            <Image src="/skills/Node.png" width={38} height={38} alt="Node" />
-            <p>NodeJs</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Node.png" width={38} height={38} alt="Node" />
+              <p>NodeJs</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/React.png" width={38} height={38} alt="React" />
-            <p>ReactJs</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/React.png" width={38} height={38} alt="React" />
+              <p>ReactJs</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/Tailwind.png" width={63} height={38} alt="Tailwind" />
-            <p>Tailwind</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Tailwind.png" width={63} height={38} alt="Tailwind" />
+              <p>Tailwind</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/Next.png" width={38} height={38} alt="Next" />
-            <p>NextJs</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Next.png" width={38} height={38} alt="Next" />
+              <p>NextJs</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/Nuxt.png" width={38} height={38} alt="Nuxt" />
-            <p>NuxtJs</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Nuxt.png" width={38} height={38} alt="Nuxt" />
+              <p>NuxtJs</p>
+            </GlareHover>
           </div>
         </div>
         <p className={styles.category}>Design</p>
         <div className={styles.skillsList}>
           <div className={styles.skillItem}>
-            <Image src="/skills/Figma.png" width={38} height={38} alt="Node" />
-            <p>Figma</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Figma.png" width={38} height={38} alt="Node" />
+              <p>Figma</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/Photoshop.png" width={38} height={38} alt="React" />
-            <p>PhotoShop</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Photoshop.png" width={38} height={38} alt="React" />
+              <p>PhotoShop</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/Canva.png" width={38} height={38} alt="Tailwind" />
-            <p>Canva</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Canva.png" width={38} height={38} alt="Tailwind" />
+              <p>Canva</p>
+            </GlareHover>
           </div>
         </div>
         <p className={styles.category}>3D</p>
         <div className={styles.skillsList}>
           <div className={styles.skillItem}>
-            <Image src="/skills/Blender.png" width={38} height={38} alt="Node" />
-            <p>Blender</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Blender.png" width={38} height={38} alt="Node" />
+              <p>Blender</p>
+            </GlareHover>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/skills/Unity.png" width={38} height={38} alt="React" />
-            <p>Unity</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Unity.png" width={38} height={38} alt="React" />
+              <p>Unity</p>
+            </GlareHover>
           </div>
         </div>
         <p className={styles.category}>DataBase</p>
         <div className={styles.skillsList}>
           <div className={styles.skillItem}>
-            <Image src="/skills/Mongo.png" width={38} height={38} alt="Node" />
-            <p>MongoDB</p>
+            <GlareHover
+              width="100%"
+              height="100%"
+              glareOpacity={0.5}
+              glareAngle={-45}
+              transitionDuration={650}
+              playOnce={true}
+              className={styles.glare}
+            >
+              <Image src="/skills/Mongo.png" width={38} height={38} alt="Node" />
+              <p>MongoDB</p>
+            </GlareHover>
           </div>
         </div>
       </div>
