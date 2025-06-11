@@ -5,6 +5,7 @@ import RotatingText from "@/RotatingText/RotatingText";
 import Nav from "./components/nav";
 import Particles from "@/RotatingText/Particles";
 import GlareHover from "@/RotatingText/GlareHover";
+import TrueFocus from "@/RotatingText/TrueFokus";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <div id="home" className={styles.home}>
       <div className={styles.textContainer}>
         <p className={styles.hi}>Hi</p>
+      
         <h1 className={styles.title}>I&#39;m <span className={styles.name}>Malvin</span> Pradhypta</h1>
           <RotatingText
             texts={["Next Engineer","Frontend Dev", "UI/UX Designer", "Tech Enthusiast"]}
