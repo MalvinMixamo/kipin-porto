@@ -5,22 +5,12 @@ import RotatingText from "@/RotatingText/RotatingText";
 import Nav from "./components/nav";
 import Particles from "@/RotatingText/Particles";
 import GlareHover from "@/RotatingText/GlareHover";
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-import { useEffect } from "react";
+import dynamic from "next/dynamic";
 
 export default function Home() {
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      lerp: 0.05,
-    });
-
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
+  const SmoothScroll = dynamic(() => import('./components/SmoothScrollWrapper'), {
+  ssr: false,
+});
   return (
     <div>
       <Particles
@@ -34,6 +24,7 @@ export default function Home() {
         disableRotation={false}
         className={styles.particles}
       />
+      <SmoothScroll />
       <div data-scroll-container>
         <Nav />
         <div className={styles.container}>

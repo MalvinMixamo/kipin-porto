@@ -1,29 +1,20 @@
 'use client';
-
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
-import './locomotive-style.module.css'; // Ensure you have the Locomotive Scroll CSS imported
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 
-export default function SmoothScrollWrapper({ children }) {
-  const scrollRef = useRef(null);
-
+export default function SmoothScroll() {
   useEffect(() => {
-    if (!scrollRef.current) return;
-
     const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
+      el: document.querySelector('[data-scroll-container]'),
       smooth: true,
       lerp: 0.08,
     });
 
     return () => {
-      scroll.destroy();
+      if (scroll) scroll.destroy();
     };
   }, []);
 
-  return (
-    <div id="scroll-container" data-scroll-container ref={scrollRef}>
-      {children}
-    </div>
-  );
+  return null; // Tidak perlu render elemen apa pun
 }
