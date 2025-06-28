@@ -16,6 +16,9 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+[data-scroll-container] {
+  min-height: 100vh;
+}
 
 body {
   color: var(--foreground);
