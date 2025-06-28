@@ -66,7 +66,7 @@ export default function Home() {
         <div id="about" className={styles.about}>
           <h2 className={styles.aboutTitle}>ABOUT ME</h2>
           <p className={styles.aboutDescription}>
-            I'm Malvin Pradhypta Eka Saputra, a web developer and UI/UX designer with a strong passion for technology. I began coding in C# when I was in 5th grade and now specialize in building modern web applications using Next.js. Recently, I've also started learning Solidity to explore the world of Web 3.0 development. With an educational background from SD Negeri Bhayangkara, SMP Negeri 12 Yogyakarta, and SMK Negeri 2 Yogyakarta, I continuously strive to combine clean code with intuitive, user-friendly design. For me, great digital experiences are built at the intersection of logic and creativity.
+            I&#39;m Malvin Pradhypta Eka Saputra a web developer and UI/UX designer with a strong passion for technology. I began coding in C# when I was in 5th grade and now specialize in building modern web applications using Next.js. Recently, I&#39;ve also started learning Solidity to explore the world of Web 3.0 development. With an educational background from SD Negeri Bhayangkara, SMP Negeri 12 Yogyakarta, and SMK Negeri 2 Yogyakarta, I continuously strive to combine clean code with intuitive, user-friendly design. For me, great digital experiences are built at the intersection of logic and creativity
           </p>
         </div>
         <div id="skills" className={styles.skills}>
